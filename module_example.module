@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme()
+ */
+function module_example_theme() {
+	$theme = [
+		'module__example' => [
+			'template' => 'module__example'
+		]
+	];
+  return $theme;
+}
+
+?>

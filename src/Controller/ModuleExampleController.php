@@ -26,6 +26,26 @@ class ModuleExampleController extends ControllerBase {
   	];
   	return $output;
   }
+
+  /**
+   *
+   */
+  public function getJson() {
+    // We could use the JSONResponse object, as well
+    $response = new Response();
+    $content = [
+      "random" => "content",
+      "nested" => [
+      1 => true,
+      2 => false
+      ]
+    ];
+    // Set content, header, statusCode
+    $response->setContent(json_encode($content));
+    $response->headers->set("Content-type", "application/json");
+    $response->setStatusCode(200);
+    return $response;
+  }
 }
 
 ?>

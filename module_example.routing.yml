@@ -6,3 +6,12 @@ module_example.show:
     _title: 'Module Example'
   requirements:
     _permission: 'access administration pages'
+
+# A route which returns json
+module.getJson:
+  path: '/module_example/json'
+  defaults:
+    _controller: 'Drupal\module_example\Controller\ModuleExampleController::getJson'
+    _title: 'Some JSON'
+  requirements:
+    _permission: 'access administration pages'

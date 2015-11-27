@@ -1,0 +1,8 @@
+# Controller example route, generates a page based on the show method
+module_example.show:
+  path: '/module_example'
+  defaults:
+    _controller: 'Drupal\module_example\Controller\ModuleExampleController::show'
+    _title: 'Module Example'
+  requirements:
+    _permission: 'access administration pages'

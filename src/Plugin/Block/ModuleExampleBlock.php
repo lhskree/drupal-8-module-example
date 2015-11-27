@@ -13,19 +13,24 @@ namespace Drupal\module_example\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 
 class ModuleExampleBlock extends BlockBase {
+
   /**
    * {@inheritdoc}
    */
   public function build() {
+    $firstVar = "";
+    $secondVar = "";
     $output = [
       '#type' => 'markup',
       '#theme' => 'module__example',
-      '#thing' => 'taco',
+      '#firstVar' => $firstVar,
+      '#secondVar' => $secondVar,
       '#attached' => [
         'library' => ['module_example/module_example_main']
       ]
     ];
     return $output;
   }
+  
 }
 ?>

@@ -8,7 +8,8 @@ function module_example_theme() {
 		'module__example' => [
 			'template' => 'module__example',
 			'variables' => [
-				'thing' => NULL
+				'firstVar' => NULL,
+				'secondVar' => NULL
 			]
 		]
 	];

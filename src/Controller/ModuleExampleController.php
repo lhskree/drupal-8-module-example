@@ -23,6 +23,11 @@ class ModuleExampleController extends ControllerBase {
   	$output = [
   		"#type" => "markup",
   		"#theme" => "module__example",
+      "#firstVar" => $firstVar,
+      "#secondVar" => $secondVar,
+      "#attached" => [
+        "library" => ['module_example/module_example_main']
+      ]
   	];
   	return $output;
   }

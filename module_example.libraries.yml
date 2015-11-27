@@ -1,0 +1,5 @@
+module_example_main:
+  version: VERSION
+  css:
+    theme:
+      css/module_example.css: {}

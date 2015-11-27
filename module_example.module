@@ -6,7 +6,10 @@
 function module_example_theme() {
 	$theme = [
 		'module__example' => [
-			'template' => 'module__example'
+			'template' => 'module__example',
+			'variables' => [
+				'thing' => NULL
+			]
 		]
 	];
   return $theme;
